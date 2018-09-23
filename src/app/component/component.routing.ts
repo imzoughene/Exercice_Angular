@@ -15,11 +15,30 @@ import { NgbdtimepickerBasic } from './timepicker/timepicker.component';
 import { NgbdtypeheadBasic } from './typehead/typehead.component';
 import { CardsComponent } from './card/card.component';
 import { ButtonsComponent } from './buttons/buttons.component';
+import { MesTachesComponent } from './mes-taches/mes-taches.component';
+import { NewTacheComponent } from './new-tache/new-tache.component';
+
 
 export const ComponentsRoutes: Routes = [
   {
     path: '',
     children: [
+    {
+        path: 'new_tache',
+        component: NewTacheComponent,
+        data: {
+          title: 'new_tache',
+          urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'new_tache'}]
+        }
+    },
+    {
+      path: 'mes_taches',
+      component: MesTachesComponent,
+      data: {
+        title: 'mes_taches',
+        urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'mes_taches'}]
+      }
+    },
     {
       path: 'progressbar',
       component: NgbdpregressbarBasic,
@@ -27,7 +46,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Progressbar',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Progressbar'}]
       }
-    }, 
+    },
     {
       path: 'pagination',
       component: NgbdpaginationBasic,
@@ -35,7 +54,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Pagination',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Pagination'}]
       }
-    }, 
+    },
     {
       path: 'accordion',
       component: NgbdAccordionBasic,
@@ -43,7 +62,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Accordion',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Accordion'}]
       }
-    }, 
+    },
     {
       path: 'alert',
       component: NgbdAlertBasic,
@@ -51,7 +70,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Alert',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Alert'}]
       }
-    }, 
+    },
     {
       path: 'carousel',
       component: NgbdCarouselBasic,
@@ -59,7 +78,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Carousel',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Carousel'}]
       }
-    },  
+    },
     {
       path: 'datepicker',
       component: NgbdDatepickerBasic,
@@ -67,7 +86,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Datepicker',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Datepicker'}]
       }
-    }, 
+    },
     {
       path: 'dropdown',
       component: NgbdDropdownBasic,
@@ -75,7 +94,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Dropdown',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Dropdown'}]
       }
-    }, 
+    },
     {
       path: 'modal',
       component: NgbdModalBasic,
@@ -83,7 +102,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Modal',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Modal'}]
       }
-    }, 
+    },
     {
       path: 'poptool',
       component: NgbdPopTooltip,
@@ -91,7 +110,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Popover & Tooltip',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Popover & Tooltip'}]
       }
-    }, 
+    },
     {
       path: 'rating',
       component: NgbdratingBasic,
@@ -99,7 +118,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Rating',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Rating'}]
       }
-    }, 
+    },
     {
       path: 'tabs',
       component: NgbdtabsBasic,
@@ -107,7 +126,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Tabs',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Tabs'}]
       }
-    }, 
+    },
     {
       path: 'timepicker',
       component: NgbdtimepickerBasic,
@@ -115,7 +134,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Timepicker',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Timepicker'}]
       }
-    },  
+    },
     {
       path: 'typehead',
       component: NgbdtypeheadBasic,

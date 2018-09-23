@@ -1,0 +1,2 @@
+ng g component component/mes_taches
+ng g component component/new_tache

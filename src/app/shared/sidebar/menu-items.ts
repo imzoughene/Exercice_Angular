@@ -151,7 +151,7 @@ export const ROUTES: RouteInfo[] = [
     extralink: false,
     submenu: []
   },
-  {
+ {
     path: '/component/cards',
     title: 'Card',
     icon: 'mdi mdi-blur-radial',
@@ -160,5 +160,26 @@ export const ROUTES: RouteInfo[] = [
     labelClass: '',
     extralink: false,
     submenu: []
+  },
+  {
+    path: '/component/mes_taches',
+    title: 'Mes tâches',
+    icon: 'mdi mdi-blur-radial',
+    class: '',
+    label: '',
+    labelClass: '',
+    extralink: false,
+    submenu: []
+  },
+  {
+    path: '/component/new_tache',
+    title: 'Ajouter une nouvelle tâche',
+    icon: 'mdi mdi-blur-radial',
+    class: '',
+    label: '',
+    labelClass: '',
+    extralink: false,
+    submenu: []
   }
+
 ];
