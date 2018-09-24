@@ -27,7 +27,7 @@ export const ComponentsRoutes: Routes = [
         path: 'new_tache',
         component: NewTacheComponent,
         data: {
-          title: 'new_tache',
+          title: 'une nouvelle tâche',
           urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'new_tache'}]
         }
     },
@@ -35,7 +35,7 @@ export const ComponentsRoutes: Routes = [
       path: 'mes_taches',
       component: MesTachesComponent,
       data: {
-        title: 'mes_taches',
+        title: 'mes taches',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'mes_taches'}]
       }
     },
