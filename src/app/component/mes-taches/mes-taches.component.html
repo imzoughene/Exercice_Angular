@@ -1,3 +1,17 @@
-<p>
-  mes-taches works!
-</p>
+<div class="row">
+  <div class="col-lg-3 col-md-6" *ngFor="let item of itemArray">
+      <div class="card">
+          <div class="card-body">
+              <h4 class="card-title">{{item.titre}}</h4>
+              <p class="card-text">
+                  {{item.Description}}
+              </p>
+              <p class="text-primary">{{item.DateSelected.month}} / {{item.DateSelected.year}} </p>
+            </div>
+            <button class="btn btn-danger btn-block btn-lg"
+            (click)="OnDelete(item.$key)">
+            Supprimer
+            </button>
+      </div>
+  </div>
+</div>
