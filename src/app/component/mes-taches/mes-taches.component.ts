@@ -34,7 +34,10 @@ export class MesTachesComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  OnDelete(key){
+    this.itemList.remove(key)
+    this.itemArray=[];
+  }
 }
 export class ListItemClass{
   $key :any;
