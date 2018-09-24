@@ -38,8 +38,8 @@ export const ComponentsRoutes: Routes = [
         title: 'mes tâches',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'mes_taches'}]
       }
-    },
-    {
+    }
+   /* {
       path: 'progressbar',
       component: NgbdpregressbarBasic,
       data: {
@@ -158,6 +158,7 @@ export const ComponentsRoutes: Routes = [
         title: 'Card',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Card'}]
       }
-    }]
+  }*/
+  ]
   }
 ];

@@ -3,7 +3,7 @@ import { RouteInfo } from './sidebar.metadata';
 export const ROUTES: RouteInfo[] = [
   {
     path: '',
-    title: 'Personal',
+    title: 'Imzoughene Youssef',
     icon: '',
     class: 'nav-small-cap',
     label: '',
@@ -23,7 +23,7 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '',
-    title: 'UI Components',
+    title: 'Toubib SARL',
     icon: '',
     class: 'nav-small-cap',
     label: '',
@@ -31,7 +31,7 @@ export const ROUTES: RouteInfo[] = [
     extralink: true,
     submenu: []
   },
-  {
+  /*{
     path: '/component/accordion',
     title: 'Accordion',
     icon: 'mdi mdi-equal',
@@ -160,7 +160,7 @@ export const ROUTES: RouteInfo[] = [
     labelClass: '',
     extralink: false,
     submenu: []
-  },
+  },*/
   {
     path: '/component/mes_taches',
     title: 'Mes tâches',

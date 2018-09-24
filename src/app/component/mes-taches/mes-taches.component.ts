@@ -63,10 +63,13 @@ export class MesTachesComponent implements OnInit {
     this.itemList.remove(key)
     this.itemArray=[];
   }
-  OnEdit (item) {
+  OnEdit(item) {
     //console.log("Editing")
-    //console.log(item)
-    this.itemList.set(item.key,{
+    console.log("item $ key"+item.$key)
+    console.log("item + ")
+    console.log(item)
+
+    this.itemList.set(item.$key,{
       titre:this.data.titre,
       Description:this.data.Description,
       DateSelected:this.DateSelected
