@@ -15,6 +15,7 @@ export class NewTacheComponent implements OnInit {
   closeResult: string;
   DateSelected: NgbDateStruct;
   modalReference: any;
+  date: {year: number, month: number};
 
   data= {
     titre:' ',
@@ -50,6 +51,8 @@ export class NewTacheComponent implements OnInit {
         Description:this.data.Description,
         DateSelected:this.DateSelected
     });
+    console.log(this.date)
+    console.log(this.DateSelected)
     this.modalReference.close()
 
     this.router.navigate(['/component/mes_taches']);

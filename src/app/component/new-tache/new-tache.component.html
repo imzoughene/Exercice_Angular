@@ -12,7 +12,6 @@
 				    </button>
 				  </div>
 				  <div class="modal-body">
-				    <form>
               <div class="form-group">
                 <label for="titre">Entrer le titre</label>
                 <input type="titre" class="form-control"
@@ -35,8 +34,7 @@
                   <textarea class="form-control" id="Description"  [(ngModel)]="data.Description"
                   name="Description" rows="3"></textarea>
                 </div>
-              <button (click)='add_tache()' class="btn btn-primary">Submit</button>
-            </form>
+              <button (click)='d("Cross click");add_tache();' class="btn btn-primary">Submit</button>
 				  </div>
 				  <div class="modal-footer">
 				    <button type="button" class="btn btn-secondary" (click)="c('Close click')">Fermer</button>
